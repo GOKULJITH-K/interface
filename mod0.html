@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: spi_slave_interface</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_spi_slave_interface'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_spi_slave_interface')">spi_slave_interface</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.25</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Cond" > 89.61</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Toggle" > 86.64</a></td>
+<td class="s10 cl rt"><a href="mod0.html#FSM" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod0.html#Branch" >100.00</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home1/B120/GokulK/SPI_project_RN/coverage/../rtl/spi_slave_interface.v')">/home1/B120/GokulK/SPI_project_RN/coverage/../rtl/spi_slave_interface.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod0.html#inst_tag_0"  onclick="showContent('inst_tag_0')">spi_slave_interface_tb.DUT</a></td>
+<td class="s9 cl rt"> 95.25</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Cond" > 89.61</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Toggle" > 86.64</a></td>
+<td class="s10 cl rt"><a href="mod0.html#FSM" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod0.html#Branch" >100.00</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_spi_slave_interface'>
+<hr>
+<a name="inst_tag_0"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_0" >spi_slave_interface_tb.DUT</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.25</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Cond" > 89.61</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Toggle" > 86.64</a></td>
+<td class="s10 cl rt"><a href="mod0.html#FSM" >100.00</a></td>
+<td class="s10 cl rt"><a href="mod0.html#Branch" >100.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.25</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s8 cl rt"> 89.61</td>
+<td class="s8 cl rt"> 86.64</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 96.25</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 92.50</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod1.html#inst_tag_1" >spi_slave_interface_tb</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td colspan=7>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_spi_slave_interface'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod0.html" >spi_slave_interface</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>94</td><td>94</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>34</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>42</td><td>14</td><td>14</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>74</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>82</td><td>16</td><td>16</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>126</td><td>6</td><td>6</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>140</td><td>7</td><td>7</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>156</td><td>7</td><td>7</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>173</td><td>11</td><td>11</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>231</td><td>9</td><td>9</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>251</td><td>6</td><td>6</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>268</td><td>9</td><td>9</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>286</td><td>3</td><td>3</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+33                      begin
+34         1/1          	if(!PRESET_n)
+35         1/1          		state&lt;=IDLE;
+36                      	else
+37         1/1          		state&lt;=next_state;
+38                      end
+39                      
+40                      always@(*)
+41                      begin
+42         1/1          	next_state=IDLE;
+43         1/1          	case(state)
+44                      		IDLE:begin
+45         1/1          		   if(PSEL_i&amp;&amp;!PENABLE_i)
+46         1/1          			next_state=SETUP;
+47                      			else
+48         1/1          			next_state=IDLE;
+49                      			end
+50                      		SETUP: 
+51                      			begin
+52         1/1          			if(PSEL_i&amp;&amp;!PENABLE_i)
+53         1/1          			    next_state=SETUP;
+54         1/1          			else if(PSEL_i&amp;&amp;PENABLE_i)
+55         1/1          			next_state=ENABLE;
+56                      		        else
+57         1/1          			    next_state=IDLE;
+58                      		        end
+59                      		ENABLE: begin
+60         1/1          			if(PSEL_i)
+61         1/1          				next_state=SETUP;
+62                      			else
+63         1/1          				next_state=IDLE;
+64                      		      end
+65         1/1          				default:next_state=IDLE;
+66                               endcase
+67                      
+68                      end
+69                       /*****************************************************************************                            FSM FOR FOR APB STATES
+70                      ******************************************************************************/
+71                      
+72                      always@(posedge PCLK or negedge PRESET_n)
+73                      begin
+74         1/1          	if(!PRESET_n)
+75         1/1          		spi_mode_o&lt;=spi_run;
+76                      	else
+77         1/1          		spi_mode_o&lt;=next_mode;
+78                      end
+79                      
+80                      always@(*)
+81                      begin
+82         1/1          	next_mode=spi_run;
+83         1/1          	case(spi_mode_o)
+84                      		spi_run: begin 
+85         1/1          		   if(!spe)
+86         1/1          			next_mode=spi_wait;
+87                      			else
+88         1/1          			next_mode=spi_run;
+89                      			end
+90                      		spi_wait: 
+91                      			begin
+92         1/1          			    if(spe)
+93         1/1          			    next_mode=spi_run;
+94         1/1          				 else if(spiswai_o)
+95         1/1          			    next_mode=spi_stop;
+96                      		        else
+97         1/1          			    next_mode=spi_wait;
+98                      		        end
+99                      		spi_stop: begin
+100        1/1          			if(spe)
+101        1/1          				next_mode=spi_run;
+102        1/1          			else if(!spiswai_o)
+103        1/1          				next_mode=spi_wait;
+104                     			else 
+105        1/1          				next_mode=spi_stop;
+106                     		      end
+107        1/1          				default:next_mode=spi_run;
+108                              endcase
+109                      end
+110                     /*****************************************************************************                            GENERATE APB CONTROL SIGNALS
+111                     ******************************************************************************/
+112                     
+113                      assign PREADY_o=(state==ENABLE);
+114                      assign PSLVERR_o=(state==ENABLE)? ~tip_i:1'b0;
+115                     /*****************************************************************************                            GENERATE WRITE AND READ ENABLES
+116                     ******************************************************************************/
+117                     
+118                      assign wr_enb=(PWRITE_i &amp;&amp; state==ENABLE);
+119                      assign rd_enb=(!PWRITE_i &amp;&amp; state==ENABLE);
+120                     
+121                     /*****************************************************************************                            CONFIGURING SPI_CR_1
+122                     ******************************************************************************/
+123                     
+124                     always@(posedge PCLK or negedge PRESET_n)
+125                     begin
+126        1/1          	if(!PRESET_n)
+127        1/1          		SPI_CR_1&lt;=8'h04;
+128        1/1          	else if(wr_enb) begin
+129        1/1          		if(PADDR_i==3'b000)
+130        1/1          			SPI_CR_1&lt;=PWDATA_i;
+131                     		else
+132        1/1          			SPI_CR_1&lt;=SPI_CR_1;
+133                            end
+                        MISSING_ELSE
+134                     end
+135                     /*****************************************************************************                            CONFIGURING SPI_CR_2
+136                     ******************************************************************************/
+137                     
+138                     always@(posedge PCLK or negedge PRESET_n)
+139                     begin
+140        1/1                  if(!PRESET_n)
+141        1/1                          SPI_CR_2&lt;=8'h00;
+142        1/1                  else if(wr_enb) begin
+143        1/1                          if(PADDR_i==3'b001)
+144        1/1                                  SPI_CR_2&lt;=PWDATA_i&amp;cr2_mask;
+145                                     else
+146        1/1                                  SPI_CR_2&lt;=SPI_CR_2;
+147                                     end
+148                              else
+149        1/1                                  SPI_CR_2&lt;=SPI_CR_2;
+150                     end
+151                     /*****************************************************************************                            CONFIGURING SPI_BR
+152                     ******************************************************************************/
+153                     
+154                     always@(posedge PCLK or negedge PRESET_n)
+155                     begin
+156        1/1                  if(!PRESET_n)
+157        1/1                          SPI_BR&lt;=8'h00;
+158        1/1                  else if(wr_enb) begin
+159        1/1                          if(PADDR_i==3'b010)
+160        1/1                                  SPI_BR&lt;=PWDATA_i&amp;br_mask;
+161                                     else
+162        1/1                                  SPI_BR&lt;=SPI_BR;
+163                                     end
+164                             else
+165        1/1                                  SPI_BR&lt;=SPI_BR;
+166                     end
+167                     
+168                     /*****************************************************************************                            CONFIGURING SPI_DR
+169                     ******************************************************************************/
+170                     
+171                     always@(posedge PCLK or negedge PRESET_n)
+172                     begin
+173        1/1          	if(!PRESET_n)
+174        1/1          		SPI_DR&lt;=8'd0;
+175        1/1          	else if(wr_enb)
+176                     	        begin
+177        1/1          		if(PADDR_i==3'b100)
+178        1/1          			SPI_DR&lt;=PWDATA_i;
+179                     		else
+180        1/1          			SPI_DR&lt;=SPI_DR;
+181                     	        end
+182                     	else begin
+183        1/1          			if(SPI_DR==PWDATA_i &amp;&amp;SPI_DR!=miso_data_i &amp;&amp;(spi_mode_o==spi_run ||spi_mode_o==spi_wait))
+184        1/1          					SPI_DR&lt;=8'd0;
+185                     			else begin
+186        1/1          				if((spi_mode_o==spi_run || spi_mode_o==spi_wait)&amp;&amp;recieve_data_i)
+187        1/1          				 SPI_DR&lt;=miso_data_i;
+188                     				else 
+189        1/1          				 SPI_DR&lt;=SPI_DR;
+190                     		   end
+191                              end
+192                     	  
+193                      
+194                     
+195                     end
+196                     
+197                     /*****************************************************************************                            DECODE CONTROL REGISTER FIELDS
+198                     ******************************************************************************/
+199                     
+200                     
+201                     assign mstr_o=SPI_CR_1[4];
+202                     assign cpol_o=SPI_CR_1[3];
+203                     assign cpha_o=SPI_CR_1[2];
+204                     assign ssoe=SPI_CR_1[1];
+205                     assign lsbfe_o=SPI_CR_1[0];
+206                     assign spie_o=SPI_CR_1[7];
+207                     assign spe=SPI_CR_1[6];
+208                     assign sptie_o=SPI_CR_1[5];
+209                     
+210                     
+211                     assign spiswai_o=SPI_CR_2[1];
+212                     assign modfen=SPI_CR_2[4];
+213                     
+214                     
+215                     assign sppr_o=SPI_BR[6:4];
+216                     assign spr_o=SPI_BR[2:0];
+217                     
+218                     assign sptef=(SPI_DR==8'd0);
+219                     assign spif=(SPI_DR!=8'd0);
+220                     
+221                     /*****************************************************************************                            DETECT MODE FAULT (MODF)
+222                     ******************************************************************************/
+223                     
+224                     assign modf=(!ss_i &amp;&amp; mstr_o &amp;&amp; modfen &amp;&amp; !ssoe);
+225                     
+226                     /*****************************************************************************                            SEQUENTIAL BLOCK FOR SEND_DATA_O
+227                     ******************************************************************************/
+228                     
+229                     always@(posedge PCLK or negedge PRESET_n)
+230                     begin
+231        1/1          	if(!PRESET_n)
+232        1/1          		send_data_o&lt;=1'b0;
+233        1/1          	else if(wr_enb)
+234        1/1          		send_data_o&lt;=send_data_o;
+235                     	else begin
+236        1/1          		if((SPI_DR==PWDATA_i &amp;&amp; SPI_DR!=miso_data_i) &amp;&amp; (spi_mode_o==spi_run ||spi_mode_o==spi_wait))
+237        1/1          			send_data_o&lt;=1'd1;
+238                     		else begin
+239        1/1          			if((spi_mode_o==spi_run ||spi_mode_o==spi_wait) &amp;&amp; recieve_data_i)
+240        1/1          				send_data_o&lt;=1'd1;
+241                     			else
+242        1/1          				send_data_o&lt;=1'd0;
+243                     		end
+244                     	      end
+245                     end
+246                     /*****************************************************************************                            SEQUENTIAL BLOCK FOR MOSI_DATA_O
+247                     ******************************************************************************/
+248                     
+249                     always@(posedge PCLK or negedge PRESET_n)
+250                     begin
+251        1/1          	if(!PRESET_n)
+252        1/1          		mosi_data_o&lt;=0;
+253        1/1          	else if(!wr_enb)
+254                     	begin
+255        1/1          		if(SPI_DR==PWDATA_i &amp;&amp; SPI_DR!=miso_data_i &amp;&amp; (spi_mode_o==spi_run||spi_mode_o==spi_wait))
+256        1/1          			mosi_data_o&lt;=SPI_DR;
+257                     		else
+258        1/1          			mosi_data_o&lt;=mosi_data_o;
+259                     	end
+                        MISSING_ELSE
+260                     end
+261                     
+262                     /*****************************************************************************                            IMPLEMENT APB READ DATA PATH
+263                     ******************************************************************************/
+264                     
+265                     
+266                     always@(*)
+267                     begin
+268        1/1          	if(rd_enb)begin
+269        1/1          		case(PADDR_i)
+270        1/1          			3'b000: PRDATA_o=SPI_CR_1;
+271        1/1          			3'b001: PRDATA_o=SPI_CR_2;
+272        1/1          			3'b010: PRDATA_o=SPI_BR;
+273        1/1          			3'b011: PRDATA_o=SPI_SR;
+274        1/1          			3'b100: PRDATA_o=SPI_DR;
+275        1/1          			default:PRDATA_o=8'b0;
+276                     		endcase
+277                     	end
+278                     		else
+279        1/1          			PRDATA_o=8'b0;
+280                     end
+281                     
+282                     /*****************************************************************************                            UPDATE SPI STATUS REGISTER(SPI_BR)
+283                     ******************************************************************************/
+284                     
+285                     always @(posedge PCLK or negedge PRESET_n) begin
+286        1/1            if (!PRESET_n)
+287        1/1              SPI_SR &lt;= 8'b0010_0000;      
+288                       else
+289        1/1              SPI_SR &lt;= {spif, 1'b0, sptef, modf, 4'b0};
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod0.html" >spi_slave_interface</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">Conditions</td><td>77</td><td>69</td><td>89.61</td></tr>
+<tr class="s8"><td class="lf">Logical</td><td>77</td><td>69</td><td>89.61</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       45
+ EXPRESSION (PSEL_i &amp;&amp; ((!PENABLE_i)))
+             ---1--    -------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       52
+ EXPRESSION (PSEL_i &amp;&amp; ((!PENABLE_i)))
+             ---1--    -------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       54
+ EXPRESSION (PSEL_i &amp;&amp; PENABLE_i)
+             ---1--    ----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       114
+ EXPRESSION ((state == ENABLE) ? ((~tip_i)) : 1'b0)
+             --------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       118
+ EXPRESSION (PWRITE_i &amp;&amp; (state == ENABLE))
+             ----1---    --------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       119
+ EXPRESSION (((!PWRITE_i)) &amp;&amp; (state == ENABLE))
+             ------1------    --------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       183
+ EXPRESSION ((SPI_DR == PWDATA_i) &amp;&amp; (SPI_DR != miso_data_i) &amp;&amp; ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait)))
+             ----------1---------    -----------2-----------    --------------------------3--------------------------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       183
+ SUB-EXPRESSION ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait))
+                 -----------1-----------    ------------2-----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       186
+ EXPRESSION (((spi_mode_o == spi_run) || (spi_mode_o == spi_wait)) &amp;&amp; recieve_data_i)
+             --------------------------1--------------------------    -------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       186
+ SUB-EXPRESSION ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait))
+                 -----------1-----------    ------------2-----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       224
+ EXPRESSION (((!ss_i)) &amp;&amp; mstr_o &amp;&amp; modfen &amp;&amp; ((!ssoe)))
+             ----1----    ---2--    ---3--    ----4----
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       236
+ EXPRESSION ((SPI_DR == PWDATA_i) &amp;&amp; (SPI_DR != miso_data_i) &amp;&amp; ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait)))
+             ----------1---------    -----------2-----------    --------------------------3--------------------------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       236
+ SUB-EXPRESSION ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait))
+                 -----------1-----------    ------------2-----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       239
+ EXPRESSION (((spi_mode_o == spi_run) || (spi_mode_o == spi_wait)) &amp;&amp; recieve_data_i)
+             --------------------------1--------------------------    -------2------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       239
+ SUB-EXPRESSION ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait))
+                 -----------1-----------    ------------2-----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       255
+ EXPRESSION ((SPI_DR == PWDATA_i) &amp;&amp; (SPI_DR != miso_data_i) &amp;&amp; ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait)))
+             ----------1---------    -----------2-----------    --------------------------3--------------------------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       255
+ SUB-EXPRESSION ((spi_mode_o == spi_run) || (spi_mode_o == spi_wait))
+                 -----------1-----------    ------------2-----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ EXPRESSION ((((!spie_o)) &amp;&amp; ((!sptie_o))) ? 1'b0 : ((((!sptie_o)) &amp;&amp; spie_o) ? (spif || modf) : ((((!spie_o)) &amp;&amp; sptie_o) ? sptef : (spif || modf || sptef))))
+             --------------1--------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ SUB-EXPRESSION (((!spie_o)) &amp;&amp; ((!sptie_o)))
+                 -----1-----    ------2-----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ SUB-EXPRESSION ((((!sptie_o)) &amp;&amp; spie_o) ? (spif || modf) : ((((!spie_o)) &amp;&amp; sptie_o) ? sptef : (spif || modf || sptef)))
+                 ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ SUB-EXPRESSION (((!sptie_o)) &amp;&amp; spie_o)
+                 ------1-----    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ SUB-EXPRESSION (spif || modf)
+                 --1-    --2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ SUB-EXPRESSION ((((!spie_o)) &amp;&amp; sptie_o) ? sptef : (spif || modf || sptef))
+                 ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ SUB-EXPRESSION (((!spie_o)) &amp;&amp; sptie_o)
+                 -----1-----    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       295
+ SUB-EXPRESSION (spif || modf || sptef)
+                 --1-    --2-    --3--
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod0.html" >spi_slave_interface</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Totals</td>
+<td class="rt">43</td>
+<td class="rt">37</td>
+<td class="rt">86.05 </td>
+</tr><tr class="s8">
+<td>Total Bits</td>
+<td class="rt">232</td>
+<td class="rt">201</td>
+<td class="rt">86.64 </td>
+</tr><tr class="s8">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">116</td>
+<td class="rt">101</td>
+<td class="rt">87.07 </td>
+</tr><tr class="s8">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">116</td>
+<td class="rt">100</td>
+<td class="rt">86.21 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Ports</td>
+<td class="rt">25</td>
+<td class="rt">22</td>
+<td class="rt">88.00 </td>
+</tr><tr class="s9">
+<td>Port Bits</td>
+<td class="rt">120</td>
+<td class="rt">111</td>
+<td class="rt">92.50 </td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">60</td>
+<td class="rt">56</td>
+<td class="rt">93.33 </td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">60</td>
+<td class="rt">55</td>
+<td class="rt">91.67 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Signals</td>
+<td class="rt">18</td>
+<td class="rt">15</td>
+<td class="rt">83.33 </td>
+</tr><tr class="s8">
+<td>Signal Bits</td>
+<td class="rt">112</td>
+<td class="rt">90</td>
+<td class="rt">80.36 </td>
+</tr><tr class="s8">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">56</td>
+<td class="rt">45</td>
+<td class="rt">80.36 </td>
+</tr><tr class="s8">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">56</td>
+<td class="rt">45</td>
+<td class="rt">80.36 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>PCLK</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>PRESET_n</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>PWRITE_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>PSEL_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>PENABLE_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ss_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>recieve_data_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>tip_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>PADDR_i[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>PWDATA_i[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>miso_data_i[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>mstr_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cpol_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cpha_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>lsbfe_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>spiswai_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>spi_interrupt_request_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>PREADY_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>PSLVERR_o</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>send_data_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mosi_data_o[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mosi_data_o[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mosi_data_o[5:2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mosi_data_o[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>mosi_data_o[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>spi_mode_o[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>sppr_o[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>spr_o[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>PRDATA_o[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>PRDATA_o[4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>PRDATA_o[5]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>PRDATA_o[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>PRDATA_o[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>state[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>next_state[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>next_mode[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_CR_1[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_CR_2[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_CR_2[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>SPI_CR_2[4:3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_CR_2[7:5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>SPI_BR[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_BR[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>SPI_BR[6:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_BR[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>SPI_DR[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_SR[3:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>SPI_SR[5:4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>SPI_SR[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>SPI_SR[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spif</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sptef</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>modf</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>modfen</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spe</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ssoe</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_enb</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_enb</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spie_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sptie_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod0.html" >spi_slave_interface</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: spi_mode_o</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+<td>(Not included in score)</td>
+</tr><tr class="s10">
+<td>Transitions</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: spi_mode_o</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>spi_run</td>
+<td class="rt">75</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>spi_stop</td>
+<td class="rt">95</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>spi_wait</td>
+<td class="rt">86</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>spi_run->spi_wait</td>
+<td class="rt">86</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>spi_stop->spi_run</td>
+<td class="rt">75</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>spi_stop->spi_wait</td>
+<td class="rt">103</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>spi_wait->spi_run</td>
+<td class="rt">75</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>spi_wait->spi_stop</td>
+<td class="rt">95</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: state</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+<td>(Not included in score)</td>
+</tr><tr class="s10">
+<td>Transitions</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: state</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>ENABLE</td>
+<td class="rt">55</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>IDLE</td>
+<td class="rt">35</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>SETUP</td>
+<td class="rt">46</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>ENABLE->IDLE</td>
+<td class="rt">35</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>ENABLE->SETUP</td>
+<td class="rt">61</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>IDLE->SETUP</td>
+<td class="rt">46</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>SETUP->ENABLE</td>
+<td class="rt">55</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>SETUP->IDLE</td>
+<td class="rt">35</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod0.html" >spi_slave_interface</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s10">
+<td>Branches</td>
+<td></td>
+<td class="rt">63</td>
+<td class="rt">63</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">114</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">295</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">34</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>CASE</td>
+<td class="rt">43</td>
+<td class="rt">8</td>
+<td class="rt">8</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">74</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>CASE</td>
+<td class="rt">83</td>
+<td class="rt">9</td>
+<td class="rt">9</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">126</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">140</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">156</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">173</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">231</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">251</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">268</td>
+<td class="rt">7</td>
+<td class="rt">7</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">286</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+114         assign PSLVERR_o=(state==ENABLE)? ~tip_i:1'b0;
+                                            <font color = "green">-1-</font>  
+                                            <font color = "green">==></font>  
+                                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+295        assign spi_interrupt_request_o=(!spie_o&&!sptie_o)?1'b0:(!sptie_o&&spie_o)?(spif||modf):(!spie_o&&sptie_o)?sptef:(spif||modf||sptef);
+                                                             <font color = "green">-1-</font>                     <font color = "green">-2-</font>                             <font color = "green">-3-</font>      
+                                                             <font color = "green">==></font>                     <font color = "green">==></font>                             <font color = "green">==></font>      
+                                                                                                                     <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+34         	if(!PRESET_n)
+           	<font color = "green">-1-</font>  
+35         		state<=IDLE;
+           <font color = "green">		==></font>
+36         	else
+37         		state<=next_state;
+           <font color = "green">		==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+43         	case(state)
+           	<font color = "green">-1-</font>  
+44         		IDLE:begin
+45         		   if(PSEL_i&&!PENABLE_i)
+           		   <font color = "green">-2-</font>  
+46         			next_state=SETUP;
+           <font color = "green">			==></font>
+47         			else
+48         			next_state=IDLE;
+           <font color = "green">			==></font>
+49         			end
+50         		SETUP: 
+51         			begin
+52         			if(PSEL_i&&!PENABLE_i)
+           			<font color = "green">-3-</font>  
+53         			    next_state=SETUP;
+           <font color = "green">			    ==></font>
+54         			else if(PSEL_i&&PENABLE_i)
+           			     <font color = "green">-4-</font>  
+55         			next_state=ENABLE;
+           <font color = "green">			==></font>
+56         		        else
+57         			    next_state=IDLE;
+           <font color = "green">			    ==></font>
+58         		        end
+59         		ENABLE: begin
+60         			if(PSEL_i)
+           			<font color = "green">-5-</font>  
+61         				next_state=SETUP;
+           <font color = "green">				==></font>
+62         			else
+63         				next_state=IDLE;
+           <font color = "green">				==></font>
+64         		      end
+65         				default:next_state=IDLE;
+           <font color = "green">				==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>IDLE </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>IDLE </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>SETUP </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>SETUP </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>SETUP </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>ENABLE </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>ENABLE </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+74         	if(!PRESET_n)
+           	<font color = "green">-1-</font>  
+75         		spi_mode_o<=spi_run;
+           <font color = "green">		==></font>
+76         	else
+77         		spi_mode_o<=next_mode;
+           <font color = "green">		==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+83         	case(spi_mode_o)
+           	<font color = "green">-1-</font>  
+84         		spi_run: begin 
+85         		   if(!spe)
+           		   <font color = "green">-2-</font>  
+86         			next_mode=spi_wait;
+           <font color = "green">			==></font>
+87         			else
+88         			next_mode=spi_run;
+           <font color = "green">			==></font>
+89         			end
+90         		spi_wait: 
+91         			begin
+92         			    if(spe)
+           			    <font color = "green">-3-</font>  
+93         			    next_mode=spi_run;
+           <font color = "green">			    ==></font>
+94         				 else if(spiswai_o)
+           				      <font color = "green">-4-</font>  
+95         			    next_mode=spi_stop;
+           <font color = "green">			    ==></font>
+96         		        else
+97         			    next_mode=spi_wait;
+           <font color = "green">			    ==></font>
+98         		        end
+99         		spi_stop: begin
+100        			if(spe)
+           			<font color = "green">-5-</font>  
+101        				next_mode=spi_run;
+           <font color = "green">				==></font>
+102        			else if(!spiswai_o)
+           			     <font color = "green">-6-</font>  
+103        				next_mode=spi_wait;
+           <font color = "green">				==></font>
+104        			else 
+105        				next_mode=spi_stop;
+           <font color = "green">				==></font>
+106        		      end
+107        				default:next_mode=spi_run;
+           <font color = "green">				==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>spi_run </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>spi_run </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>spi_wait </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>spi_wait </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>spi_wait </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>spi_stop </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>spi_stop </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>spi_stop </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+126        	if(!PRESET_n)
+           	<font color = "green">-1-</font>  
+127        		SPI_CR_1<=8'h04;
+           <font color = "green">		==></font>
+128        	else if(wr_enb) begin
+           	     <font color = "green">-2-</font>  
+129        		if(PADDR_i==3'b000)
+           		<font color = "green">-3-</font>  
+130        			SPI_CR_1<=PWDATA_i;
+           <font color = "green">			==></font>
+131        		else
+132        			SPI_CR_1<=SPI_CR_1;
+           <font color = "green">			==></font>
+133               end
+                  MISSING_ELSE
+           <font color = "green">       ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+140                if(!PRESET_n)
+                   <font color = "green">-1-</font>  
+141                        SPI_CR_2<=8'h00;
+           <font color = "green">                ==></font>
+142                else if(wr_enb) begin
+                        <font color = "green">-2-</font>  
+143                        if(PADDR_i==3'b001)
+                           <font color = "green">-3-</font>  
+144                                SPI_CR_2<=PWDATA_i&cr2_mask;
+           <font color = "green">                        ==></font>
+145                        else
+146                                SPI_CR_2<=SPI_CR_2;
+           <font color = "green">                        ==></font>
+147                        end
+148                 else
+149                                SPI_CR_2<=SPI_CR_2;
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+156                if(!PRESET_n)
+                   <font color = "green">-1-</font>  
+157                        SPI_BR<=8'h00;
+           <font color = "green">                ==></font>
+158                else if(wr_enb) begin
+                        <font color = "green">-2-</font>  
+159                        if(PADDR_i==3'b010)
+                           <font color = "green">-3-</font>  
+160                                SPI_BR<=PWDATA_i&br_mask;
+           <font color = "green">                        ==></font>
+161                        else
+162                                SPI_BR<=SPI_BR;
+           <font color = "green">                        ==></font>
+163                        end
+164                else
+165                                SPI_BR<=SPI_BR;
+           <font color = "green">                        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+173        	if(!PRESET_n)
+           	<font color = "green">-1-</font>  
+174        		SPI_DR<=8'd0;
+           <font color = "green">		==></font>
+175        	else if(wr_enb)
+           	     <font color = "green">-2-</font>  
+176        	        begin
+177        		if(PADDR_i==3'b100)
+           		<font color = "green">-3-</font>  
+178        			SPI_DR<=PWDATA_i;
+           <font color = "green">			==></font>
+179        		else
+180        			SPI_DR<=SPI_DR;
+           <font color = "green">			==></font>
+181        	        end
+182        	else begin
+183        			if(SPI_DR==PWDATA_i &&SPI_DR!=miso_data_i &&(spi_mode_o==spi_run ||spi_mode_o==spi_wait))
+           			<font color = "green">-4-</font>  
+184        					SPI_DR<=8'd0;
+           <font color = "green">					==></font>
+185        			else begin
+186        				if((spi_mode_o==spi_run || spi_mode_o==spi_wait)&&recieve_data_i)
+           				<font color = "green">-5-</font>  
+187        				 SPI_DR<=miso_data_i;
+           <font color = "green">				 ==></font>
+188        				else 
+189        				 SPI_DR<=SPI_DR;
+           <font color = "green">				 ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+231        	if(!PRESET_n)
+           	<font color = "green">-1-</font>  
+232        		send_data_o<=1'b0;
+           <font color = "green">		==></font>
+233        	else if(wr_enb)
+           	     <font color = "green">-2-</font>  
+234        		send_data_o<=send_data_o;
+           <font color = "green">		==></font>
+235        	else begin
+236        		if((SPI_DR==PWDATA_i && SPI_DR!=miso_data_i) && (spi_mode_o==spi_run ||spi_mode_o==spi_wait))
+           		<font color = "green">-3-</font>  
+237        			send_data_o<=1'd1;
+           <font color = "green">			==></font>
+238        		else begin
+239        			if((spi_mode_o==spi_run ||spi_mode_o==spi_wait) && recieve_data_i)
+           			<font color = "green">-4-</font>  
+240        				send_data_o<=1'd1;
+           <font color = "green">				==></font>
+241        			else
+242        				send_data_o<=1'd0;
+           <font color = "green">				==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+251        	if(!PRESET_n)
+           	<font color = "green">-1-</font>  
+252        		mosi_data_o<=0;
+           <font color = "green">		==></font>
+253        	else if(!wr_enb)
+           	     <font color = "green">-2-</font>  
+254        	begin
+255        		if(SPI_DR==PWDATA_i && SPI_DR!=miso_data_i && (spi_mode_o==spi_run||spi_mode_o==spi_wait))
+           		<font color = "green">-3-</font>  
+256        			mosi_data_o<=SPI_DR;
+           <font color = "green">			==></font>
+257        		else
+258        			mosi_data_o<=mosi_data_o;
+           <font color = "green">			==></font>
+259        	end
+           	MISSING_ELSE
+           <font color = "green">	==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+268        	if(rd_enb)begin
+           	<font color = "green">-1-</font>  
+269        		case(PADDR_i)
+           		<font color = "green">-2-</font>  
+270        			3'b000: PRDATA_o=SPI_CR_1;
+           <font color = "green">			==></font>
+271        			3'b001: PRDATA_o=SPI_CR_2;
+           <font color = "green">			==></font>
+272        			3'b010: PRDATA_o=SPI_BR;
+           <font color = "green">			==></font>
+273        			3'b011: PRDATA_o=SPI_SR;
+           <font color = "green">			==></font>
+274        			3'b100: PRDATA_o=SPI_DR;
+           <font color = "green">			==></font>
+275        			default:PRDATA_o=8'b0;
+           <font color = "green">			==></font>
+276        		endcase
+277        	end
+278        		else
+279        			PRDATA_o=8'b0;
+           <font color = "green">			==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>3'b000 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>3'b001 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>3'b010 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>3'b011 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>3'b100 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>default</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+286          if (!PRESET_n)
+             <font color = "green">-1-</font>  
+287            SPI_SR <= 8'b0010_0000;      
+           <font color = "green">    ==></font>
+288          else
+289            SPI_SR <= {spif, 1'b0, sptef, modf, 4'b0};
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_0">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_spi_slave_interface">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

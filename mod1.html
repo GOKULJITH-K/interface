@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: spi_slave_interface_tb</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_spi_slave_interface_tb'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_spi_slave_interface_tb')">spi_slave_interface_tb</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 96.25</td>
+<td class="s10 cl rt"><a href="mod1.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 92.50</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home1/B120/GokulK/SPI_project_RN/coverage/../tb/spi_slave_interface_tb.v')">/home1/B120/GokulK/SPI_project_RN/coverage/../tb/spi_slave_interface_tb.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod1.html#inst_tag_1"  onclick="showContent('inst_tag_1')">spi_slave_interface_tb</a></td>
+<td class="s9 cl rt"> 96.25</td>
+<td class="s10 cl rt"><a href="mod1.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 92.50</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_spi_slave_interface_tb'>
+<hr>
+<a name="inst_tag_1"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_1" >spi_slave_interface_tb</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 96.25</td>
+<td class="s10 cl rt"><a href="mod1.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 92.50</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.65</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s8 cl rt"> 89.61</td>
+<td class="s8 cl rt"> 88.64</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<span class=inst>none</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod0.html#inst_tag_0" id="tag_urg_inst_0">DUT</a></td>
+<td class="s9 cl rt"> 95.25</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s8 cl rt"> 89.61</td>
+<td class="s8 cl rt"> 86.64</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_spi_slave_interface_tb'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod1.html" >spi_slave_interface_tb</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>372</td><td>372</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>29</td><td>4</td><td>4</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>39</td><td>4</td><td>4</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>52</td><td>36</td><td>36</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>104</td><td>12</td><td>12</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>126</td><td>9</td><td>9</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>147</td><td>10</td><td>10</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ROUTINE</td><td>165</td><td>14</td><td>14</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">INITIAL</td><td>184</td><td>283</td><td>283</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+28                      always begin
+29         2/2          	#10 PCLK=1'b1;
+30         2/2          	#10 PCLK=1'b0;
+31                      end
+32                      
+33                      /****************************************************************************
+34                      * TASK FOR RESET
+35                      * **************************************************************************/
+36                      
+37                      task reset;
+38                      	begin
+39         1/1          		@(posedge PCLK)
+40         1/1          		PRESET_n=1'b0;
+41         1/1          		@(posedge PCLK)
+42         1/1          		PRESET_n=1'b1;
+43                      	end
+44                      endtask
+45                      
+46                      /***************************************************************************
+47                      * TASK FOR CONFIGURING CR1 CR2 AND BR
+48                      * ****************************************************************************/
+49                      
+50                      task config1(input [7:0]  a,b,c);	
+51                      	begin
+52         1/1          		@(posedge PCLK)
+53         1/1          		PSEL_i=1'b1;
+54         1/1          		PWRITE_i=1'b1;
+55         1/1          		PENABLE_i=1'b0;
+56         1/1          		PADDR_i=3'b000;
+57         1/1          		PWDATA_i=a;
+58                      
+59         1/1          		@(posedge PCLK)
+60         1/1          	   PENABLE_i=1'b1;
+61                      
+62         1/1          		@(posedge PCLK)
+63         2/2          		wait(PREADY_o);
+64         1/1          		PENABLE_i=1'b0;
+65                      
+66         1/1          		@(posedge PCLK)
+67         1/1                PSEL_i=1'b1;
+68         1/1          	   PWRITE_i=1'b1;
+69         1/1          		PENABLE_i=1'b0;
+70         1/1          		PADDR_i=3'b001;
+71         1/1          		PWDATA_i=b;
+72                      		
+73         1/1          		@(posedge PCLK)
+74         1/1          	   PENABLE_i=1'b1;
+75                      		
+76         1/1          		@(posedge PCLK)
+77         2/2          		wait(PREADY_o);
+78         1/1          		PENABLE_i=1'b0;
+79                      
+80         1/1          		@(posedge PCLK)
+81         1/1          		PSEL_i=1'b1;
+82         1/1          	   PWRITE_i=1'b1;
+83         1/1          		PENABLE_i=1'b0;
+84         1/1          	   PADDR_i=3'b010;
+85         1/1          		PWDATA_i=c;
+86                      		
+87         1/1          		@(posedge PCLK)
+88         1/1          	   PENABLE_i=1'b1;
+89                      		
+90         1/1          	   @(posedge PCLK)
+91         2/2          		wait(PREADY_o);
+92         1/1          		PENABLE_i=1'b0;
+93                      
+94                      
+95                      	end
+96                      endtask
+97                      
+98                      /***************************************************************************
+99                      * TASK FOR CONFIGURING DR
+100                     * ****************************************************************************/
+101                     
+102                     task config2(input [7:0]  a);
+103                             begin
+104        1/1                          @(posedge PCLK)
+105        1/1                          PSEL_i=1'b1;
+106        1/1                          PWRITE_i=1'b1;
+107        1/1                          PENABLE_i=1'b0;
+108        1/1                          PADDR_i=3'b100;
+109        1/1                          PWDATA_i=a;
+110                     
+111        1/1                          @(posedge PCLK)
+112        1/1                          PENABLE_i=1'b1;
+113                     
+114        1/1                          @(posedge PCLK)
+115        2/2                          wait(PREADY_o);
+116        1/1                          PENABLE_i=1'b0;
+117                     end
+118                     endtask
+119                     
+120                     /***************************************************************************
+121                     * TASK FOR READING THE REGISTERS
+122                     * ****************************************************************************/
+123                     
+124                     task read_reg(input [2:0]  z);
+125                             begin
+126        1/1                          @(posedge PCLK)
+127        1/1                          PSEL_i=1'b1;
+128        1/1                          PWRITE_i=1'b0;
+129        1/1                          PENABLE_i=1'b0;
+130        1/1                          PADDR_i=z;
+131                     					 
+132        1/1          		@(posedge PCLK)
+133        1/1          		PENABLE_i=1'b1;
+134                     					 
+135        1/1          		@(posedge PCLK)
+136        1/1          		PENABLE_i=1'b0;
+137                     					 
+138                               
+139                     end
+140                     endtask
+141                     /*****************************************************************************
+142                     * TASK FOR MISO DATA , RECIEVE DATA, SS AND TIP
+143                     * ***************************************************************************/
+144                     integer i;
+145                     task drive_miso(input [7:0] p);
+146                     	begin
+147        1/1          		@(posedge PCLK)
+148        1/1          		recieve_data_i=1'b0;
+149        1/1          		ss_i=1'b0;
+150        1/1          		tip_i=1'b1;
+151        1/1          		miso_data_i=8'b0;
+152        2/2          		wait(~ss_i);
+153        1/1          		for(i=0;i&lt;=7;i=i+1)
+154                     		begin
+155        1/1          		     @(posedge PCLK)
+156        1/1          		     miso_data_i=p[i];
+157                     	   end
+158                     	end
+159                     endtask
+160                     /**************************************************************************
+161                     	TASK FOR WRITING SPE AND SPISWAI FOR FSM OPERATION
+162                     **************************************************************************/
+163                     task write_reg(input [2:0] addr, input [7:0] data);
+164                         begin
+165        2/2                  @(posedge PCLK);
+166        1/1                  PSEL_i    = 1'b1;
+167        1/1                  PWRITE_i  = 1'b1;
+168        1/1                  PENABLE_i = 1'b0;
+169        1/1                  PADDR_i   = addr;
+170        1/1                  PWDATA_i  = data;
+171        2/2                  @(posedge PCLK);
+172        1/1                  PENABLE_i = 1'b1;
+173        2/2                  @(posedge PCLK);
+174        1/1                  PSEL_i    = 1'b0;
+175        1/1                  PENABLE_i = 1'b0;
+176                         end
+177                     endtask
+178                     
+179                     /*****************************************************************************
+180                     * CALL THE TASK IN THE INITIAL PROCESS
+181                     * ****************************************************************************/
+182                     integer j;
+183                     initial begin
+184        1/1          	reset;
+185        1/1          	config1(8'b0011_1001,8'b1100_1111,8'b0000_0001);
+186        1/1          	config2(8'b1010_1010);
+187        1/1          	drive_miso(8'b1111_1010);
+188        1/1          	read_reg(3'b000);
+189        1/1          	read_reg(3'b001);
+190        1/1          	read_reg(3'b010);
+191        1/1          	read_reg(3'b011);
+192        1/1          	read_reg(3'b100);
+193        1/1          	read_reg(3'b111);
+194                     	
+195        1/1          	reset;
+196        1/1          	config1(8'b0011_1001,8'b1100_1111,8'b0000_0001);
+197        1/1          	config2(8'b1010_1010);
+198        1/1          	drive_miso(8'b1111_1010);
+199        1/1          	PSEL_i = 1'b1;
+200        2/2              	@(posedge PCLK); 
+201        1/1              	PSEL_i = 1'b0;
+202        2/2              	@(posedge PCLK); 
+203        2/2              	#20;
+204                     
+205        1/1              	PSEL_i    = 1'b1;
+206        1/1              	PENABLE_i = 1'b0;
+207        2/2              	@(posedge PCLK); 
+208        1/1              	PENABLE_i = 1'b1;
+209        2/2              	@(posedge PCLK); 
+210        1/1              	PSEL_i = 1'b0;
+211        1/1              	PENABLE_i = 1'b0;
+212        2/2              	@(posedge PCLK); 
+213        2/2              	#20;
+214                     
+215        1/1              	DUT.state = 2'b11;
+216        2/2              	@(posedge PCLK); 
+217        2/2              	@(posedge PCLK);
+218        2/2              	#50;
+219                     	
+220                     	
+221        1/1          	write_reg(3'b000, 8'b0000_0000); 
+222        2/2             	#20;
+223                     
+224        1/1              	write_reg(3'b000, 8'b0100_0000); 
+225        2/2              	#20;
+226                         
+227        1/1              	write_reg(3'b000, 8'b0000_0000); 
+228        2/2          	#20;
+229                     
+230        1/1              	write_reg(3'b001, 8'b0000_0010); 
+231        2/2              	#20; 
+232                     
+233        1/1             	write_reg(3'b001, 8'b0000_0000); 
+234        2/2              	#20;
+235                     
+236        1/1              	write_reg(3'b001, 8'b0000_0010); 
+237        2/2              	#20;
+238                     
+239        1/1              	write_reg(3'b000, 8'b0100_0000); 
+240        2/2              	#20;
+241        1/1          	$display(&quot;mode=%b&quot;,spi_mode_o);
+242        1/1          	write_reg(3'b001, 8'b0000_0000); 
+243        2/2              	#20;
+244        1/1          	write_reg(3'b000, 8'b0000_0000); 
+245        2/2              	#20;
+246        1/1          	$display(&quot;mode=%b&quot;,spi_mode_o);
+247        1/1          	write_reg(3'b000, 8'b0100_0000); 
+248        2/2              	#20;
+249        1/1          	$display(&quot;mode=%b&quot;,spi_mode_o);
+250                     	
+251                     
+252        1/1              	DUT.spi_mode_o = 2'b11;
+253        2/2              	@(posedge PCLK);
+254        2/2              	#20;
+255                     
+256        3/3          	PSEL_i = 0; PENABLE_i = 0; PWRITE_i = 0;
+257        3/3            	PADDR_i = 3'b000; PWDATA_i = 8'd0; miso_data_i = 8'd0;
+258        2/2            	#20;
+259        2/2          	@(posedge PCLK);
+260        1/1                  write_reg(3'b100, 8'hA5);
+261        4/4                	@(posedge PCLK); @(posedge PCLK);
+262        1/1            	write_reg(3'b000, 8'h40);
+263        4/4            	@(posedge PCLK); @(posedge PCLK);
+264        1/1            	PWDATA_i = 8'hA5;
+265        1/1            	miso_data_i = 8'h5A;
+266        3/3            	PSEL_i = 1'b0; PENABLE_i = 1'b0; PWRITE_i = 1'b0;
+267        2/2            	@(posedge PCLK);
+268                     	
+269        3/3          	PSEL_i = 0; PENABLE_i = 0; PWRITE_i = 0;
+270        3/3            	PADDR_i = 3'b000; PWDATA_i = 8'd0; miso_data_i = 8'd0;
+271        1/1          	recieve_data_i=1'b1;
+272        2/2            	#20;
+273        2/2          	@(posedge PCLK);
+274        1/1                  write_reg(3'b100, 8'hA5);
+275        4/4                	@(posedge PCLK); @(posedge PCLK);
+276        1/1            	write_reg(3'b000, 8'h40);
+277        4/4            	@(posedge PCLK); @(posedge PCLK);
+278        1/1            	PWDATA_i = 8'hAA;
+279        1/1            	miso_data_i = 8'h5A;
+280        3/3            	PSEL_i = 1'b0; PENABLE_i = 1'b0; PWRITE_i = 1'b0;
+281        2/2            	@(posedge PCLK);
+282        1/1          	write_reg(3'b000, 8'b0100_0000); 
+283        2/2              	#20;
+284        1/1          	write_reg(3'b000, 8'b0000_0000); 
+285        2/2              	#20;
+286        1/1          	write_reg(3'b001, 8'b0000_0010); 
+287        2/2              	#20;
+288        1/1          	$display(&quot;mode=%b&quot;,spi_mode_o);
+289        1/1          	recieve_data_i=1'b0;
+290                     
+291        1/1          	write_reg(3'b000, 8'b1010_0000);
+292        2/2          	@(posedge PCLK);
+293        1/1          	write_reg(3'b000, 8'b1000_0000);
+294        2/2          	@(posedge PCLK);
+295        1/1          	write_reg(3'b000, 8'b0010_0000);
+296        2/2          	@(posedge PCLK);
+297        1/1          	write_reg(3'b000, 8'b0000_0000);
+298        2/2          	@(posedge PCLK);
+299                     
+300        1/1          	write_reg(3'b000, 8'b0001_0000);
+301        2/2          	@(posedge PCLK);
+302        1/1          	write_reg(3'b001, 8'b0001_0000);
+303        2/2          	@(posedge PCLK);
+304        1/1          	ss_i=1'b0;
+305        2/2          	#20;
+306                     
+307        1/1          	write_reg(3'b000, 8'b0001_0000);
+308        2/2          	@(posedge PCLK);
+309        1/1          	write_reg(3'b001, 8'b0001_0000);
+310        2/2          	@(posedge PCLK);
+311        1/1          	ss_i=1'b1;
+312        2/2          	#20;
+313                     
+314        1/1          	write_reg(3'b000, 8'b0000_0000);
+315        2/2          	@(posedge PCLK);
+316        1/1          	write_reg(3'b001, 8'b0001_0000);
+317        2/2          	@(posedge PCLK);
+318        1/1          	ss_i=1'b0;
+319        2/2          	#20;
+320                     
+321        1/1          	write_reg(3'b000, 8'b0001_0010);
+322        2/2          	@(posedge PCLK);
+323        1/1          	write_reg(3'b001, 8'b0001_0000);
+324        2/2          	@(posedge PCLK);
+325        1/1          	ss_i=1'b0;
+326        2/2          	#20;
+327                     	
+328        1/1          	write_reg(3'b000, 8'b0000_0000);
+329        2/2          	@(posedge PCLK);
+330                     	
+331        1/1          	write_reg(3'b000, 8'b0101_0000); 
+332        2/2          	#20;
+333                     
+334        1/1          	write_reg(3'b000, 8'b0100_1101); 
+335        2/2          	#20;
+336                     
+337        1/1          	write_reg(3'b000, 8'b1100_0000); 
+338        2/2          	#20;
+339                     
+340        1/1          	write_reg(3'b001, 8'b0101_0000); 
+341        2/2          	#20;
+342                     
+343        1/1          	write_reg(3'b001, 8'b0100_1101); 
+344        2/2          	#20;
+345                     
+346        1/1          	write_reg(3'b001, 8'b1100_0000); 
+347        2/2          	#20;
+348                     
+349                     	
+350        1/1          	write_reg(3'b010, 8'b0101_0000); 
+351        2/2          	#20;
+352                     
+353        1/1          	write_reg(3'b010, 8'b0100_1101); 
+354        2/2          	#20;
+355                     
+356        1/1          	write_reg(3'b010, 8'b1100_0000); 
+357        2/2          	#20;
+358                     
+359        1/1          	write_reg(3'b010, 8'b1111_1111); 
+360        2/2          	#20;
+361                     
+362        1/1          	write_reg(3'b010, 8'b0000_0000); 
+363        2/2          	#20;
+364                     
+365        1/1          	write_reg(3'b010, 8'b1111_1111); 
+366        2/2          	#20;
+367                     
+368                     
+369                     
+370        1/1          	write_reg(3'b100, 8'b0101_0000); 
+371        2/2          	#20;
+372                     
+373        1/1          	write_reg(3'b100, 8'b0100_1101); 
+374        2/2          	#20;
+375                     
+376        1/1          	write_reg(3'b100, 8'b1100_0000); 
+377        2/2          	#20;
+378                     
+379                     
+380                     	
+381        3/3          	miso_data_i = 8'h00; @(posedge PCLK);
+382        3/3            	miso_data_i = 8'hFF; @(posedge PCLK);
+383        3/3            	miso_data_i = 8'hA5; @(posedge PCLK);
+384        3/3            	miso_data_i = 8'h5A; @(posedge PCLK);
+385                     
+386        9/9          	tip_i = 1; @(posedge PCLK); tip_i = 0; @(posedge PCLK);tip_i = 1; @(posedge PCLK);
+387        1/1          	write_reg(3'b111, 8'hDE);
+388        4/4           	@(posedge PCLK); @(posedge PCLK);
+389                     
+390        6/6          	PADDR_i = 3'b101; PWRITE_i = 0; PSEL_i = 1; PENABLE_i = 0; @(posedge PCLK);
+391        3/3            	PENABLE_i = 1; @(posedge PCLK);
+392        4/4           	PSEL_i = 0; PENABLE_i = 0; @(posedge PCLK);
+393                     
+394                     
+395        1/1          	$display(&quot;-------Simulation Completed-----------&quot;);
+396        1/1          	$finish;
+</pre>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod1.html" >spi_slave_interface_tb</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Totals</td>
+<td class="rt">25</td>
+<td class="rt">22</td>
+<td class="rt">88.00 </td>
+</tr><tr class="s9">
+<td>Total Bits</td>
+<td class="rt">120</td>
+<td class="rt">111</td>
+<td class="rt">92.50 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">60</td>
+<td class="rt">56</td>
+<td class="rt">93.33 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">60</td>
+<td class="rt">55</td>
+<td class="rt">91.67 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Signals</td>
+<td class="rt">25</td>
+<td class="rt">22</td>
+<td class="rt">88.00 </td>
+</tr><tr class="s9">
+<td>Signal Bits</td>
+<td class="rt">120</td>
+<td class="rt">111</td>
+<td class="rt">92.50 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">60</td>
+<td class="rt">56</td>
+<td class="rt">93.33 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">60</td>
+<td class="rt">55</td>
+<td class="rt">91.67 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>PCLK</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PRESET_n</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PWRITE_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PSEL_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PENABLE_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>ss_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>recieve_data_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>tip_i</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PADDR_i[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PWDATA_i[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>miso_data_i[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>sppr_o[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spr_o[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spi_mode_o[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PRDATA_o[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PRDATA_o[4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>PRDATA_o[5]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PRDATA_o[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>PRDATA_o[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PREADY_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mstr_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cpol_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cpha_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>lsbfe_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spiswai_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>spi_interrupt_request_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>PSLVERR_o</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>send_data_o</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mosi_data_o[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mosi_data_o[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>mosi_data_o[5:2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mosi_data_o[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>mosi_data_o[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_1">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+  </ul>
+  <ul name="tag_spi_slave_interface_tb">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>
